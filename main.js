@@ -172,6 +172,15 @@ function animate() {
     } else if (time > 10 && time < 11) {
       uniforms.a.value += 0.01;
       uniforms.d.value += 0.01;
+    } else if (time > 12.5 && time < 13.5) {
+      uniforms.a.value -= 0.01;
+      uniforms.d.value -= 0.01;
+    } else if (time > 14.5) {
+      uniforms.a.value = 0.0;
+      uniforms.b.value = 0.0;
+      uniforms.c.value = 0.0;
+      uniforms.d.value = 0.0;
+      time = 0;
     }
   }
 
